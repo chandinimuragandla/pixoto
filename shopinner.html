@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Inner Page1
+    </title>
+    <link rel="stylesheet" href="styles/shopinner.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <h1><a href="home.html">Pix<ion-icon style="font-size: 39px; font-weight: bold;" name="aperture-outline"></ion-icon>to</a></h1>   
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+
+                <li>
+                    <a href="">Pages 
+                        <ion-icon name="chevron-down-outline" style="margin-top: 5px;"></ion-icon>
+                    </a>
+
+                    <ul class="drop-down">
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="styleguide.html">Style Guide</a></li>
+                    </ul>
+                </li>
+                <li style="margin-top: 5px;"><a href="blog.html">Blog</a></li>
+                <li style="margin-top: 5px;"><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="cart-btn">
+                <ion-icon name="cart-outline"></ion-icon>
+                <button><a href="contact.html">Contact Us</a></button>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="images/shopimg1.jpg">
+            </div>
+            <div class="text">
+                <h1>Sony Alpha a7R IV</h1>
+                <h2>$ 250.00 USD</h2>
+                <p>★★★★★(5 Review)</p>
+                <h4>Photo information</h4>
+                <p>Category:  DSLR Go Pro</p>
+                   <p> Model:Canon EOS Rebel T7i</p>
+                   <p> Lens Size:24.2-megapixel</p>
+                   <p> Resolutions: 45-point autofocus system</p>
+                   <p>Delivery:Online</p>
+                    <button> Add to Cart</button>
+            </div>
+            
+        </div>
+        <div class="AA">
+
+            <div class="a">
+            <h1>Details<button class="btn"><i class="fa-solid fa-caret-down"></i></button></h1>
+            <p class="pp" style="display: none;">The number of photos you will receive depends on the type of photography service <br>
+                choose and the amount of time spent on the shoot. </p>
+                <hr>
+            </div>
+        <br><br><br><br>
+            <div class="a1">
+                <h1>Shipping<button class="btn"><i class="fa-solid fa-caret-down"></i></button></h1>
+                <p class="pp" style="display: none;">Yes, we offer a range of printing services, including high-quality prints,<br>
+                     canvases, and photo albums. Please contact us for more information on our printing options.</p>
+                     <hr>
+                </div>
+        
+        <br><br><br><br>
+        
+        
+                <div class="a2">
+                    <h1>Returns<button class="btn"><i class="fa-solid fa-caret-down"></i></i></button></h1>
+                    <p class="pp" style="display: none;">We understand that unforeseen circumstances may arise that require you <br>
+                        to cancel or reschedule your shoot. Please contact us as soon as possible to discuss your options.</p>
+                         <hr>
+                    </div>
+        
+        
+        
+                    </div>
+                    <script>
+                        var v = document.querySelectorAll(".pp");
+                        var button = document.querySelectorAll(".btn");
+                
+                        button.forEach(function(button,index){
+                        button.addEventListener("click", function() {
+                            if (v[index].style.display === "none") {
+                
+                                v[index].style.display = "block";
+                                button.innerHTML ='<i class="fa-solid fa-caret-up"></i>';
+                            } else {
+                                v[index].style.display = "none";
+                                button.innerHTML ='<i class="fa-solid fa-caret-down">';
+                
+                            }
+                        });
+                    });
+                  </script>
+                   <div class="footer">
+
+                    <div class="div1">
+                        <h1>Pix<ion-icon style="font-size: 39px; font-weight: bold;" name="aperture-outline"></ion-icon>to</h1>
+                        <p>
+                            There are many variations passag of <br>
+                            Lorem Ipsum available but the
+                        </p>
+                        <div class="footer-icons">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon  style="  margin-left: 30px;" name="logo-twitter"></ion-icon>
+                            <ion-icon  style="  margin-left: 30px;" name="logo-xbox"></ion-icon>
+                            <ion-icon  style="  margin-left: 30px;" name="logo-skype"></ion-icon>
+                        </div>
+                        <ul><li>Powered by <span>Webflow</span> </li></ul>
+                    </div>
+            
+                    <div class="div2">
+                        <ul>
+                            <li style="font-weight: bold; margin-bottom: 30PX;">PAGES</li>
+                            <li>About Us</li>
+                            <li>Our Services</li>
+                            <li>Gallery</li>
+                            <li>Blog Post</li>
+                            <li>Our Team</li>
+                            <li>Contact us</li>
+                        </ul>
+                    </div>
+            
+                    <div class="div3">
+                        <ul>
+                            <li  style="font-weight: bold; margin-bottom: 30PX;">OTHER PAGES</li>
+                            <li>Photography</li>
+                            <li>Testimonial</li>
+                            <li>Style Guide</li>
+                            <li>Change Log</li>
+                            <li>License</li>
+                        </ul>
+                    </div>
+                    <div class="div4">
+            
+                        <h4  style="font-weight: bold; margin-bottom: 30PX;  margin-top: 20px;">SUBSCRIBE</h4>  
+                        <p>
+                            There are many variations passag of <br>
+                            Lorem Ipsum available.
+                        </p>
+                       <div class="form-div">
+                        <form id="subscribe-form" onsubmit="subscribe(event)">
+                            <input type="email" id="email" name="email" placeholder="Your Email Address"  required> <br>
+                            <input  type="submit" value="SUBSCRIBE" id="subscribeBtn">
+                            
+                        </form>
+            
+                       
+                        <script src="subscribe.js"></script>
+            
+                       </div>
+                    </div>
+                    
+                  
+                </div>
+               
+                <div class="below-text">
+                    <hr style="margin: 50px;">
+                    <p>© 2023 <span style="font-weight: 500; cursor: pointer;">Brandbes.</span>  All rights reserved</p>
+                </div>
+                <div class="bg-color">
+            
+                </div>
+        </div>
+
+</body>
+</html>

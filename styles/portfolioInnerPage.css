@@ -1,13 +1,10 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.container{
-    height: 1200px;
-    width: 100%;
-    background-color: #1a2835;
-    
+body{
+    margin: 20px;
 }
 
 .nav-bar{
@@ -78,14 +75,13 @@ ul li:hover ul.drop-down {
     color: white;
 }
 .cart-btn button{
-    font-size: 20px;
-    width: 250px;
+    font-size: 30px;
+    width: 200px;
     height: 70px;
-    font-weight: 300px;
+    font-weight: 500;
     margin-left: 20px;
     border-radius: 10px;
     transition: all 0.5s ease;
-    
 }
 .cart-btn button:hover{
     background-color: black;
@@ -95,7 +91,6 @@ ul li:hover ul.drop-down {
 .cart-btn button a{
     color: black;
     transition: all 0.5s ease;
-   
 }
 .cart-btn button a:hover{
     color: white
@@ -157,150 +152,154 @@ ul li:hover ul.drop-down {
    
  }
 
-.main{
-    display: flex;
+
+
+
+
+ 
+
+ .my-album-div{
+    background:  #15324e;
+    height: 2100px;
+    padding: 20px;
+    color: white;
    
-    
 }
-.div1{
-    margin-top: 150px;
-    margin-left: 150px;
-    border: 1px  solid gray;
-  
-}
- .text{
-    margin-top: 150px;
-    color: white;
-    padding: 10px;
-    border: 1px  solid gray;
-}
-.div2{
-    margin-top: 150px;
-    margin-left: 150px;
-    border: 1px  solid gray;
-}
-.div3{
-    margin-top: 150px;
-    margin-left: 150px;
-    border: 1px  solid gray;
-}
-.text1 h6{
-    color: white;
+.my-album-div h2{
     margin-top: 100px;
+    margin-bottom: 50px;
     text-align: center;
-    font-size: 30px;
 }
- .body2 .text1 p{
-    color: white;
-    margin-top: 40px;
+.my-album-div h1{
+    font-size: 70px;
     text-align: center;
-    font-size: 50px;
 }
-.form1{
-    
-}
-.fname input{
-    height:60px;
-    width:480px;
-    border: 1px solid #073158;
-    background-color:#1a2835;
-    border-radius: 10px; 
-    color: white;
+
+
+
+
+.img-album{
     margin-top: 100px;
-   
-    margin-left: 90px;
-}
- .box{
     display: flex;
- }
- .lname input{
-    height:60px;
-    width:480px;
-    border: 1px solid #073158;
-    background-color:#1a2835;
-    color: white;
-    margin-top: 100px;
-    margin-left: 50px;
-    border-radius: 10px; 
- } 
- .box1{
-    display: flex;
- } 
- .mail input{
-    height:60px;
-    width:480px;
-    border: 1px solid #073158;
-    background-color:#1a2835;
-    border-radius: 10px; 
-    color: white;
-    margin-top: 30px;
    
-    margin-left: 90px;
 }
-.sub input{
-    height:60px;
-    width:480px;
-    border: 1px solid #073158;
-    background-color:#1a2835;
-    color: white;
-    margin-top: 30px;
-    margin-left: 50px;
-    border-radius: 10px; 
- } 
- .Message textarea{
-    height:150px;
-    width: 900px;
-    border: 1px solid #073158;
-    background-color:#1a2835;
-    color: white;
-    border-radius: 10px; 
-    margin-top: 30px;
-    margin-left: 150px;
- }
- .button input{
-    border: 1px solid #073158;
-    background-color:#1a2835;
-    height: 50px;
-    width: 100px;
-    margin-left: 550px;
-    font-size: 25px;
-    border-radius: 5px;
-    color: gray;
+
+.img-album .album1{
+    background-image: url(../Images/ablem-img1.jpg);
     
- }
- .button input:hover{
-    color:white;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+    color:black;
+    border-radius: 10px;
+    margin-left: 50px;
     transition: all 0.5s ease;
-    text-transform: uppercase;
- }
- .map{
-    margin-top: 120px;
-    width:100%;
- }
- .map iframe{
-    width:100%
- }
- .footer{
+} 
+
+.img-album .album1:hover{
+    transform: rotate(3deg)
+}
+.img-album .album1 h3{
+    font-size: 40px;
+    padding-top: 350px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    color: white;
+}
+.img-album .album1 p{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    
+   
+}
+.album-readmore-btn{
+    display: flex;
+
+}
+.alb-btn-div button{
+    font-size: 20px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    background-color: white;
+    transition: all 0.5s ease;
+    font-weight: bold;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+.alb-btn-div button:hover{
+    color: gray;
+}
+.album-iconic-div{
+    display: flex;
+    margin-left: 30px;
+    font-weight: 700;
+   
+}
+.album-iconic-div ion-icon{
+    font-size: 30px;
+    margin-right: 50px;
+    font-weight: 700;
+    margin-top: 5px;
+   
+}
+.camero-icon{
+    background-color: rgba(255, 255, 255, 0.822);
+    width: 200px;
+    height: 50px;
+    display: block;
+    border-radius: 10px;
+}
+
+.location-icon{
+    background-color: rgba(255, 255, 255, 0.822);
+    margin-left: 20px;
+    width: 150px;
+    height: 50px;
+    display: block;
+    border-radius: 10px;
+}
+.album-iconic-div .p1{
+    font-size: 15px;
+   margin-top: -30px;
+   
+}
+
+
+
+.background-color{
+    background:  #15324e;
+    height: 1000px ;
+}
+
+.footer{
     background-color: #092846;
     height: 800px;
     color: white;
     display: flex;
+    margin-top: 100px;
+
     justify-content: space-between;
    
 }
-.footer .div4{
+.footer .div1{
     margin-top: 150px;
     margin-left: 40px;
 }
-.footer .div4 h1{
+.footer .div1 h1{
     font-size: 40px;
     margin-bottom: 50px;
 }
-.footer .div4 p{
+.footer .div1 p{
     font-size: 20px;
     margin-bottom: 30px;
 }
-.footer .div4 .footer-icons{
+.footer .div1 .footer-icons{
     font-size: 35px;
     margin-bottom: 50px;
    
@@ -316,64 +315,64 @@ ul li:hover ul.drop-down {
     font-size: 37px;
 }
 
-.footer .div4 ul{
+.footer .div1 ul{
     margin-left: 20px;
 
 }
-.footer .div4 li{
+.footer .div1 li{
   font-size: 20px; 
 }
-.footer .div4 li span{
+.footer .div1 li span{
     font-size: 25px; 
     transition: all 0.5s ease;
   }
-  .footer .div4 li span:hover{
+  .footer .div1 li span:hover{
     font-size: 26px;
     color: gray; 
   }
 
 
-  .footer .div5{
+  .footer .div2{
     margin-top: 150px;
     font-size: 20px;
    
 }
 
-.footer .div5 li{
+.footer .div2 li{
     margin-top: 20PX;
     list-style: none;
     transition: all 0.5s ease;
     font-family: 500;
 }
-.footer .div5 li:hover{
+.footer .div2 li:hover{
     color: gray;
 }
-.footer .div6{
+.footer .div3{
     margin-top: 150px;
     font-size: 20px;
     
 }
-.footer .div6 li{
+.footer .div3 li{
     margin-top: 20PX;
     list-style: none;
     transition: all 0.5s ease;
     font-family: 500;
 }
-.footer .div6 li:hover{
+.footer .div3 li:hover{
     color: gray;
 }
 
-.footer .div7{
+.footer .div4{
     margin-top: 150px;
     font-size: 20px;
     margin-right: 50px;
    
 }
-.footer .div7 p{
+.footer .div4 p{
     font-size: 20px;
     margin-bottom: 20px;
 }
-.footer .div7 input{
+.footer .div4 input{
     width: 300px;
     height: 70px;
     font-size: 20px;
@@ -382,7 +381,7 @@ ul li:hover ul.drop-down {
     margin-bottom: 20px;
    
 }
-.footer .div7 ::placeholder{
+.footer .div4 ::placeholder{
     font-size: 20px;
     padding: 20px;
 }
@@ -413,6 +412,40 @@ ul li:hover ul.drop-down {
 }
 .bg-color{
     background-color: #15324e;
-    height: 100px;
+    height: 150px;
 }
 
+
+
+.my-album-btn-div{
+    text-align: center;
+    margin-top: 100px;
+   
+    
+}
+.my-album-btn-div a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.5s ease;
+    
+}
+.my-album-btn-div a:hover{
+    color: gray;
+    transform: scale(1.1);
+}
+.my-album-btn-div button{
+   
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: 500;
+    width: 150px;
+    height: 50px;
+    transition: all 0.5s ease;
+    background-color: black;
+}
+.my-album-btn-div button:hover{
+    color: gray;
+    transform: scale(1.1);
+}
